@@ -1,5 +1,5 @@
 {
-  "name": "CoordinateConvert",
+  "name": "coordinate-convert",
   "version": "1.0.0",
   "description": "地理坐标转换库",
   "main": "index.js",
