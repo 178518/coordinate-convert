@@ -1,0 +1,23 @@
+{
+  "name": "coordinate-convert",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "zhangsq <zhangsq@outlook.com>"
+  ],
+  "description": "地理坐标转换库",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".gitignore",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
