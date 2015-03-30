@@ -81,12 +81,12 @@
         },
 
         /**
-         * GCJ02坐标转百度承09坐标
+         * GCJ02坐标转百度BD09坐标
          * @param {number|Array} lng 经度值或经纬度数组
          * @param {number} [lat] 纬度值
          * @returns {Array<number>} 转换后的BD09经纬度数组
          */
-        GCJ2BD : function (lng, lat) {
+        gcj2bd : function (lng, lat) {
             var coord = checkCoordinate(lng, lat),
                 x = coord[0],
                 y = coord[1],
@@ -104,7 +104,7 @@
          * @param {number} [lat] 纬度值
          * @returns {Array<number>} 转换后的GCJ02经纬度数组
          */
-        BD2GCJ : function (lng, lat) {
+        bd2gcj : function (lng, lat) {
             var coord = checkCoordinate(lng, lat),
                 x = coord[0] - 0.0065,
                 y = coord[1] - 0.006,
