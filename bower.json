@@ -1,7 +1,7 @@
 {
   "name": "coordinate-convert",
   "main": "coordinate-convert.js",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "authors": [
     "zhangsq <zhangsq@outlook.com>"
   ],
