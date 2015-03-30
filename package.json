@@ -11,5 +11,9 @@
     "url": "https://git.coding.net/zhangshiqi/CoordinateConvert.git"
   },
   "author": "zhangsq@outlook.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.8.0"
+  }
 }
