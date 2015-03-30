@@ -1,15 +1,15 @@
-(function (factory) {
+(function (global, factory) {
     var ns = 'CoordinateConvert';
-    if (define && define.amd) {
+    if (typeof define === 'function' && define.amd) {
         // AMD
         define(ns, factory());
-    } else if (exports) {
+    } else if (typeof exports !== 'undefined') {
         // CommonJS
         exports = factory();
     } else {
-        window[ns] = factory();
+        global[ns] = factory();
     }
-})(function () {
+})(this, function () {
     var pi = Math.PI,
         a = 6378245.0,
         ee = 0.00669342162296594323,
