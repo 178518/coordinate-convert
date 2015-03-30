@@ -1,12 +1,13 @@
 (function (factory) {
+    var ns = 'CoordinateConvert';
     if (define && define.amd) {
         // AMD
-        define('CoordinateConvert', factory());
+        define(ns, factory());
     } else if (exports) {
         // CommonJS
         exports = factory();
     } else {
-        window.CoordinateConvert = factory();
+        window[ns] = factory();
     }
 })(function () {
     var pi = Math.PI,
