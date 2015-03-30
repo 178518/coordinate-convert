@@ -2,7 +2,7 @@
   "name": "coordinate-convert",
   "version": "1.0.0",
   "description": "地理坐标转换库",
-  "main": "index.js",
+  "main": "coordinate-convert.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

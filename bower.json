@@ -1,6 +1,6 @@
 {
   "name": "coordinate-convert",
-  "main": "index.js",
+  "main": "coordinate-convert.js",
   "version": "1.0.0",
   "authors": [
     "zhangsq <zhangsq@outlook.com>"
