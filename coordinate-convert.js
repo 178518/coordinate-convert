@@ -5,7 +5,7 @@
         define(ns, factory());
     } else if (typeof exports !== 'undefined') {
         // CommonJS
-        exports = factory();
+        module.exports = factory();
     } else {
         global[ns] = factory();
     }
@@ -59,7 +59,7 @@
          * @returns {Array<number>} 转换后的GCJ02经纬度数组
          */
         wgs2gcj : function(lng, lat) {
-            var coord = checkCoordinate(arguments),
+            var coord = checkCoordinate(lng, lat),
                 gLng, gLat;
             lng = coord[0];
             lat = coord[1];
@@ -79,6 +79,31 @@
                 gLng = lng + dLng;
             }
             return [gLng, gLat];
+        },
+
+        /**
+         * WGS84坐标转GCJ02坐标
+         * @param {number|Array} lng 经度值或经纬度数组
+         * @param {number} [lat] 纬度值
+         * @returns {Array<number>} 转换后的GCJ02经纬度数组
+         */
+        gcj2wgs : function (lng, lat) {
+            if (outOfChina(lng, lat)) {
+                return [lng, lat]
+            }
+            else {
+                var dlat = transformLat(lng - 105.0, lat - 35.0);
+                var dlng = transformLng(lng - 105.0, lat - 35.0);
+                var radlat = lat / 180.0 * pi;
+                var magic = Math.sin(radlat);
+                magic = 1 - ee * magic * magic;
+                var sqrtmagic = Math.sqrt(magic);
+                dlat = (dlat * 180.0) / ((a * (1 - ee)) / (magic * sqrtmagic) * pi);
+                dlng = (dlng * 180.0) / (a / sqrtmagic * Math.cos(radlat) * pi);
+                mglat = lat + dlat;
+                mglng = lng + dlng;
+                return [lng * 2 - mglng, lat * 2 - mglat]
+            }
         },
 
         /**
