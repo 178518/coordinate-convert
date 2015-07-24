@@ -1,6 +1,6 @@
 {
   "name": "coordinate-convert",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "地理坐标转换库",
   "main": "coordinate-convert.js",
   "scripts": {
