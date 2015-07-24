@@ -1,5 +1,5 @@
 # coordinate-convert
-地理坐标转换库
+地理坐标转换库，可以实现WGS84转GCJ02、GCJ02转BD009、BD09转GCJ02
 
 ## 安装
 ### Node
