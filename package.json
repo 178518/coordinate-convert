@@ -1,15 +1,12 @@
 {
   "name": "coordinate-convert",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "地理坐标转换库",
   "main": "coordinate-convert.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://git.coding.net/zhangshiqi/CoordinateConvert.git"
-  },
+  "repository": "https://github.com/stuarqi/coordinate-convert",
   "author": "zhangsq@outlook.com",
   "license": "ISC",
   "devDependencies": {
