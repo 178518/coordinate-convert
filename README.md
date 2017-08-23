@@ -87,5 +87,5 @@ GCJ02坐标转百度BD09坐标
 
 ## 示例
 ```
-var coord = CoordinateConvert.wgc2gcj(116.3997, 39.9158)
+var coord = CoordinateConvert.wgs2gcj(116.3997, 39.9158)
 ```
